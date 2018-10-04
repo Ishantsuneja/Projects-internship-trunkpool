@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="codegrid1.css">
+	<title></title>
+</head>
+<body>
+
+
+
+	<h1>Creating Snack Bar</h1>
+		<button type="button" onmouseover="myfunction()">Show Snack Bar</button>
+		<div id="Snackbar" class="show" >
+		Some Text
+		</div>
+
+		<script type="text/javascript">
+			functiom myfunction(){
+				var x = document.getElementById('Snackbar');
+				x.className = "show";
+				setTimeout(function(){x.className = x.className.replace("show","");},3000);
+ 			}
+		</script>
+</body>
+</html>
